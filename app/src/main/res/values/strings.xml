@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NU Media</string>
+    <string name="title_home">Home</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="assalam">Assalamu`alaikum</string>
+    <string name="highlight">Highlight</string>
+    <string name="doa_untuk_hari_ini">Doa untuk hari ini</string>
+    <string name="nu_online">NU Online</string>
+    <string name="nu_care">NU Care</string>
+    <string name="nu_games">NU Games</string>
+    <string name="nu_tv">NU TV</string>
+    <string name="nama_anda">nama_anda</string>
+    <string name="sekarang_menuju_waktu">Sekarang Menuju Waktu</string>
+    <string name="sholat">Sholat</string>
+    <string name="lokasi_anda">Lokasi Anda</string>
+</resources>

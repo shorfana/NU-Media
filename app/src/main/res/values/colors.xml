@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="ijo_tua">#005f37</color>
+    <color name="ijo_muda">#378b41</color>
+    <color name="putih">#fff</color>
+    <color name="ijo_text">#00882f</color>
+</resources>

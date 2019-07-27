@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.explore.ActivityDetailVideo">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#005f37"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/nucover"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_player"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/title_layout"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/youtube_player"
+        android:background="#e4e4e4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/ijo_tua"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/img_left_header"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:onClick="share_btn_pressed"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/youtube_player"
+            android:src="@drawable/nucover"
+            android:visibility="visible" />
+    </LinearLayout>
+    <!--real image size is 40x50px-->
+
+
+    <TextView
+        android:layout_below="@+id/title_layout"
+        android:id="@+id/textViewDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:maxLines="8"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/ijo_muda"
+        android:textSize="16dp" />
+
+
+
+
+
+</LinearLayout>

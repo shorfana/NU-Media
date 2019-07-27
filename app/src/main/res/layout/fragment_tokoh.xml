@@ -1,9 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycleViewTokoh"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:id="@+id/rUlamaTokoh"/>
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--app:cardCornerRadius="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@drawable/bg_color_doa_harian"-->
+            <!--android:orientation="vertical">-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Name"-->
+                <!--android:textColor="@color/putih"-->
+                <!--android:textSize="17sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:id="@+id/ulamaName1"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Date"-->
+                <!--android:textColor="@color/putih"-->
+                <!--android:textSize="17sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:id="@+id/ulamaDate1"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Name"-->
+                <!--android:textColor="@color/putih"-->
+                <!--android:textSize="17sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:id="@+id/ulamaPlace1"/>-->
+
+
+        <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:cardCornerRadius="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginTop="20dp">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@drawable/bg_color_doa_harian"-->
+            <!--android:orientation="vertical">-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Name"-->
+                <!--android:textColor="@color/putih"-->
+                <!--android:textSize="17sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:id="@+id/ulamaName2"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Date"-->
+                <!--android:textColor="@color/putih"-->
+                <!--android:textSize="17sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:id="@+id/ulamaDate2"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Name"-->
+                <!--android:textColor="@color/putih"-->
+                <!--android:textSize="17sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:id="@+id/ulamaPlace2"/>-->
+
+
+        <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:cardCornerRadius="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginTop="20dp">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@drawable/bg_color_doa_harian"-->
+            <!--android:orientation="vertical">-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Name"-->
+                <!--android:textColor="@color/putih"-->
+                <!--android:textSize="17sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:id="@+id/ulamaName3"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Date"-->
+                <!--android:textColor="@color/putih"-->
+                <!--android:textSize="17sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:id="@+id/ulamaDate3"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Name"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textColor="@color/putih"-->
+                <!--android:textSize="17sp"-->
+                <!--android:id="@+id/ulamaPlace3"/>-->
+
+
+        <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
 </LinearLayout>

@@ -3,9 +3,6 @@ package com.iqbal.numedia.views.home;
 import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -77,6 +74,15 @@ public class FragmentHome extends Fragment {
             }
         });
 
+        CardView nuGames = (CardView) myFragment.findViewById(R.id.nuGames);
+        nuGames.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i  = new Intent(FragmentHome.this.getActivity(), NuGamesActivity.class);
+                startActivity(i);
+            }
+        });
+
 
         try {
                     Geocoder geocoder = new Geocoder(getContext());
@@ -87,18 +93,6 @@ public class FragmentHome extends Fragment {
                 }catch (IOException e){
                     e.printStackTrace();
                 }
-
-//        private void loc_function(Location location){
-//            try {
-//                Geocoder geocoder = new Geocoder(getContext());
-//                List<Address> addresses = null;
-//                String kota = addresses.get(0).getCountryName();
-//                txt_location.setText(kota);
-//
-//            }catch (IOException e){
-//                e.printStackTrace();
-//            }
-//        }
 
         return myFragment;
     }

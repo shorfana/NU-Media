@@ -15,14 +15,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".views.explore.ActivityDetailVideo"></activity>
-        <activity android:name=".views.explore.DetailTokoh" />
-        <activity android:name=".views.home.NuTvActivity" />
-        <activity android:name=".views.home.NuCareActivity" />
-        <activity android:name=".views.home.NuOnlineActivity" />
+        <activity android:name=".views.home.NuGamesActivity"></activity>
+        <activity
+            android:name=".views.explore.ActivityDetailVideo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.explore.DetailTokoh"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.home.NuTvActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.home.NuCareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.home.NuOnlineActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".views.MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

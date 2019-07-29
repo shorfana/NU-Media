@@ -13,6 +13,7 @@ import android.view.WindowManager;
 import com.iqbal.numedia.R;
 import com.iqbal.numedia.views.explore.FragmentExplore;
 import com.iqbal.numedia.views.home.FragmentHome;
+import com.iqbal.numedia.views.notification.FragmentNotification;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
@@ -43,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 return true;
             case R.id.navigation_explore:
                 loadFragment(new FragmentExplore());
+                return true;
+            case R.id.navigation_notifications:
+                loadFragment(new FragmentNotification());
                 return true;
         }
 

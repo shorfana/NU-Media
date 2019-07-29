@@ -250,28 +250,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rv_highlight"
                 android:orientation="horizontal"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:text="@string/doa_untuk_hari_ini"/>
-        <android.support.v7.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="240dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/bg_color_doa_harian"
-                android:orientation="vertical">
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

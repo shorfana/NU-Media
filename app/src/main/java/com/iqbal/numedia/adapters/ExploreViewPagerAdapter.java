@@ -5,8 +5,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import com.iqbal.numedia.views.explore.Channel;
 import com.iqbal.numedia.views.explore.FragmentTokoh;
-import com.iqbal.numedia.views.explore.FragmentVideo;
 
 public class ExploreViewPagerAdapter extends FragmentStatePagerAdapter {
 
@@ -17,8 +17,8 @@ public class ExploreViewPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position){
-            case 0: return new FragmentTokoh();
-            case 1: return new FragmentVideo();
+            case 0: return new Channel();
+            case 1: return new FragmentTokoh();
         }
 
         return null;
@@ -34,8 +34,8 @@ public class ExploreViewPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         switch (position){
-            case 0: return "Tokoh - tokoh";
-            case 1: return "Video";
+            case 0: return "Video";
+            case 1: return "Tokoh - tokoh";
             default: return null;
         }
     }

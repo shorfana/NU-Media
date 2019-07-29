@@ -27,6 +27,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@drawable/btm_nav_sel"
         app:menu="@menu/bottom_nav_menu" />
 
 

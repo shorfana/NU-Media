@@ -14,7 +14,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.iqbal.numedia.R;
 import com.iqbal.numedia.models.Item;
-import com.iqbal.numedia.models.TokohModels;
 import com.iqbal.numedia.views.explore.DetailTokoh;
 
 import java.util.List;
@@ -60,11 +59,6 @@ public class TokohUlamaAdapter extends RecyclerView.Adapter<TokohUlamaAdapter.My
         myHolder.tanggal_lahir.setText(tokohList.getTanggal_lahir());
         myHolder.tempat_lahir.setText(tokohList.getTempat_lahir());
         Glide.with(ctx).load(tokohList.getLink_gambar()).override(350,550).into(myHolder.link_gambar);
-
-
-
-
-
     }
 
     @Override

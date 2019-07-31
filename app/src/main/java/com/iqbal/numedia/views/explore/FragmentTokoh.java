@@ -7,15 +7,11 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationServices;
 import com.iqbal.numedia.API.APITokohUlamaEndPoint;
 import com.iqbal.numedia.API.APITokohUlamaService;
 import com.iqbal.numedia.R;
@@ -32,9 +28,6 @@ import retrofit2.Response;
 
 public class FragmentTokoh extends Fragment {
 
-//    TextView u1,u2,u3,t1,t2,t3,p1,p2,p3;
-//    private FusedLocationProviderClient fusedLocationClient;
-//    private TextView txtLocation;
 
     private TokohUlamaAdapter viewAdapter;
     private List<Item> mItems = new ArrayList<>();
@@ -61,7 +54,7 @@ public class FragmentTokoh extends Fragment {
 
             @Override
             public void onFailure(Call<TokohModels> call, Throwable t) {
-                Toast.makeText(getContext(), "Oops, your connection is WONGKY! ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Maaf Koneksi Internet Anda sedang Gangguan ", Toast.LENGTH_SHORT).show();
 
             }
         });

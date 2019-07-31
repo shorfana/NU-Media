@@ -7,7 +7,7 @@ import retrofit2.http.GET;
 
 public interface APITokohUlamaService {
 
-    //read
+    //read data
     @GET("zh4ex")
     Call<TokohModels> getTokohUlama();
 

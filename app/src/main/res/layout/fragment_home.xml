@@ -105,8 +105,8 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
                     android:textSize="9sp"
-                    android:text="@string/lokasi_anda"
                     android:id="@+id/lokasi_anda"
+                    android:text="@string/lokasi_anda"
                     android:textColor="@color/putih"
                     tools:ignore="SmallSp" />
 

@@ -1,7 +1,6 @@
 package com.iqbal.numedia.adapters;
 
 import android.content.Context;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,11 +38,10 @@ public class VideoPostAdapter extends RecyclerView.Adapter<VideoPostAdapter.Yout
     @Override
     public void onBindViewHolder(YoutubePostHolder holder, int position) {
 
-        //set the views here
         TextView textViewTitle = holder.textViewTitle;
         TextView textViewDes = holder.textViewDes;
         TextView textViewDate = holder.textViewDate;
-        ImageView ImageThumb = holder.ImageThumb;
+        ImageView GambarVideo = holder.Image;
 
         YoutubeDataModel object = dataSet.get(position);
 
@@ -52,11 +50,7 @@ public class VideoPostAdapter extends RecyclerView.Adapter<VideoPostAdapter.Yout
         textViewDate.setText(object.getPublishedAt());
         holder.bind(dataSet.get(position), listener);
 
-        //TODO: image will be downloaded from url
-        Picasso.with(mContext).load(object.getThumbnail()).into(ImageThumb);
-
-
-
+        Picasso.with(mContext).load(object.getThumbnail()).into(GambarVideo);
     }
 
     @Override
@@ -68,14 +62,14 @@ public class VideoPostAdapter extends RecyclerView.Adapter<VideoPostAdapter.Yout
         TextView textViewTitle;
         TextView textViewDes;
         TextView textViewDate;
-        ImageView ImageThumb;
+        ImageView Image;
 
         public YoutubePostHolder(View itemView) {
             super(itemView);
             this.textViewTitle = (TextView) itemView.findViewById(R.id.textViewTitle);
             this.textViewDes = (TextView) itemView.findViewById(R.id.textViewDes);
             this.textViewDate = (TextView) itemView.findViewById(R.id.textViewDate);
-            this.ImageThumb = (ImageView) itemView.findViewById(R.id.ImageThumb);
+            this.Image = (ImageView) itemView.findViewById(R.id.ImageThumb);
 
         }
 

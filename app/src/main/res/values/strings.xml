@@ -10,10 +10,10 @@
     <string name="nu_care">NU Care</string>
     <string name="nu_games">NU Games</string>
     <string name="nu_tv">NU TV</string>
-    <string name="nama_anda">Iqbal</string>
+    <string name="nama_anda"></string>
     <string name="sekarang_menuju_waktu">Sekarang Menuju Waktu</string>
-    <string name="sholat">Shubuh</string>
-    <string name="lokasi_anda">lokasi</string>
+    <string name="sholat">Sholat (Coming Soon)</string>
+    <string name="lokasi_anda">lokasi (Coming Soon)</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

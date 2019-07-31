@@ -11,62 +11,56 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:orientation="vertical">
-
-        <android.support.v7.widget.CardView
+        android:orientation="vertical"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center">
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp">
-            <LinearLayout
+            android:layout_height="250dp">
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="150dp"
-                    android:layout_height="200dp"
-                    android:id="@+id/item_poto_tokoh"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/item_poto_tokoh"
-                    android:orientation="vertical"
-                    android:layout_marginTop="45dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/namaTokoh"
-                        android:text="nama tokoh"
-                        android:textSize="14sp"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="14sp"
-                        android:text="Tempat"
-                        android:id="@+id/tempatTokoh"
-                        />
+                android:layout_height="180dp"
+                android:background="@drawable/bg_colorhome1"
+                tools:ignore="MissingConstraints">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="123dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="124dp"
+                    android:src="@drawable/nucover"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
 
-                </LinearLayout>
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <TextView
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/item_poto_tokoh"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginEnd="24dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="1dp"
+                android:src="@drawable/nutap"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                tools:ignore="NotSibling"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Deskripsi"
-            android:id="@+id/content_detail"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="20dp"
-            android:lineSpacingMultiplier="1"
-            android:textColor="#000"/>
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="#585757"
+            />
 
         <TableLayout
             android:layout_width="match_parent"
@@ -82,11 +76,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lahir"/>
+                    android:layout_marginRight="20dp"
+                    android:textColor="#000"
+                    android:text="Nama"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tangal_lahir"
+                    android:id="@+id/namaTokoh"
+                    android:textColor="#000"
                     android:text="Lahir" />
 
             </TableRow>
@@ -97,16 +94,55 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Wafat"/>
+                    android:layout_marginRight="20dp"
+                    android:textColor="#000"
+                    android:text="Tempat"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/wafat"
-                    android:text="Wafat"/>
+                    android:id="@+id/tempatTokoh"
+                    android:textColor="#000"
+                    android:text="Lahir" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#000"
+                    android:text="Lahir"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tangal_lahir"
+                    android:textColor="#000"
+                    android:text="Lahir" />
 
             </TableRow>
 
         </TableLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="#585757"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/content_detail"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingMultiplier="1"
+            android:textColor="#000"/>
+
 
     </LinearLayout>
+
 </ScrollView>

@@ -36,6 +36,6 @@ public class DetailTokoh extends AppCompatActivity {
         tempat.setText(tempat_ulama);
         tanggal.setText(tanggal_ulama);
         desk.setText(desk_ulama);
-        Glide.with(this).load(link_gambar).into(gambar);
+        Glide.with(this).load(link_gambar).override(120,120).into(gambar);
     }
 }
